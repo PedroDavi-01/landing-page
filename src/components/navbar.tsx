@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { LaptopMinimal } from 'lucide-react';
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin  } from "react-icons/fa";
 
 
 export default async function Navbar() {
@@ -14,18 +14,24 @@ export default async function Navbar() {
           className="font-bold text-xl text-blue-600 tracking-tight"
         >
           <div className="flex items-center gap-2">
-            <span>Landing Page </span>
+            <span className="font-sm font-extrabold text-blue-600">Portfolio</span>
             <LaptopMinimal size={18}/>
           </div>
         </Link>
 
         <div className="flex items-center gap-6">
-              <Link 
-                href="/" 
+              <a 
+                href="https://github.com/PedroDavi-01" 
                 className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors"
               >
                 <FaGithub size={18}/>
-              </Link>
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/pedro-davi-10b923356/" 
+                className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors"
+              >
+                <FaLinkedin size={18}/>
+              </a>
         </div>
       </div>
     </nav>
